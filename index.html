@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3.js Going Further</title>
+    <style>
+        body {
+            margin: 25px;
+            overflow: hidden;
+        }
+        
+        ul li {
+            font-size: 25px;
+            font-family: monospace;
+        }
+        
+        p {
+            padding-left: 20px;
+        }
+        
+        textarea {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>I will be documenting all of my learning in small projects and seeing what it leads to.</h1>
+        <h2>I decided to put the notes inside of a textarea because then I can document things and still have room to see and show what I am building.</h2>
+        <h2 class="h2">I don't have a super great setup yet as I am using my Television to watch tutorials and coding on my laptop which is not that big. Working on it lol</h2>
+        <textarea>
+            Is the GPU The graphics card?
+            GPU stands for graphics processing unit. You'll also see GPUs commonly referred
+             to as graphics cards or video cards. Every PC uses a GPU to render images, video 
+             and 2D or 3D animations for display.
+             Arbitrariness
+             Arbitrariness is the quality of being "determined by chance, whim, or impulse, and not by necessity, reason, 
+             or principle". It is also used to refer to a choice made without any specific criterion or restraint. 
+             Arbitrary decisions are not necessarily the same as random decisions. Wikipedia
+            
+             HSL (hue, saturation, lightness) and HSV (hue, saturation, value, also known as HSB or hue, saturation, brightness) are alternative representations of the RGB color model, designed in the 1970s
+              by computer graphics
+              researchers to more closely align with the way human vision perceives color-making attributes
+
+            ------------   THESE NOTES  REFER TO THE D3.js Chart library ----
+            D3 does not introduce a new visual representation. Unlike Processing or Protovis, D3’s vocabulary of graphical marks comes directly from web standards: HTML, SVG, and CSS. For example, you can create SVG elements using D3 and style them with external stylesheets. You can use composite filter effects, dashed strokes and clipping. If browser vendors introduce new features tomorrow, you’ll be able to use them immediately—no toolkit update required. And, if you decide in the future to use a toolkit other than D3, you can take your knowledge of standards with you!
+
+Best of all, D3 is easy to debug using the browser’s built-in element inspector: the nodes that you manipulate with D3 are exactly those that the browser understands natively.
+             One of the most common things that I say to myself daily: Ok that's connected and that means this, is that correct.
+            </textarea> While going through the SCrollTrigger tutorial I stumbled upon D3.js and remember that I wanted to return to this library but here I am nearly half a year later and have found myself right where I need to be.
+
+
+
+    </header>
+
+
+    <!--
+    <h1>Cars Report</h1>
+    <ul>
+        <li>2021 Nissan leaf: $1080</li>
+        <li>2010 Ford F150: $1950</li>
+        <li>2009 Chevy Trailblazer: $1550</li>
+    </ul>-->
+    <p>This will give me a bounce in out ball that is blue with a border of black -></p>
+    <svg class="circle" width="600" height="400">
+        <circle cx="200" cy="300" r="40" fill="blue" stroke-width="10px" stroke="black"></circle>
+       
+    </svg>
+    <p> Next will be a rectangle that shifts 45 degrees and also floats up on the Y axis</p>
+    <svg class="rect">
+    <rect width="200" height="100" fill="red"></rect>
+    </svg>
+
+
+    <div>
+        <svg class="other" width="600" height="400">
+            <circle cx="200" cy="300" r="40" fill="blue" stroke-width="10px" stroke="black"></circle>
+        </svg>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="D3.js"></script>
+    <script src="gsap.js"></script>
+
+</body>
+
+</html>
