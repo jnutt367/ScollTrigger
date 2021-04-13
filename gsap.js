@@ -1,8 +1,8 @@
 gsap.fromTo(".circle", { x: 50, y: -100 }, {
     duration: "4",
     padding: "100",
-    x: 100,
-    y: -900,
+    x: -70,
+    y: -400,
     ease: "bounce.in",
 
     border: "5px solid yellow"
@@ -14,3 +14,11 @@ gsap.to("h1", { duration: 3, padding: "20", borderRadius: "15px", repeat: "-1" }
 
 Draggable.create("#jason");
 Draggable.create('svg');
+
+gsap.to("#jason", {
+    y: -50,
+    stagger: {
+        each: 0.2,
+        from: "encenterd"
+    }
+});
